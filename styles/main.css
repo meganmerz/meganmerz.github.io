@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 body#about img {
     height: 15em;
 }
@@ -11,10 +13,25 @@ p {
 :root {
     --vertical-space: 2rem;
     --horizontal-space: 3rem;
+    --heading-color: lavenderblush;
+    --light-color: aliceblue;
+    --background-color:  whitesmoke;
+    --link-color: rgb(170, 170, 170);
+    --contrast-color:rgb(250, 169, 196);
+}
+a {
+    color: var(--link-color);
+}
+a:hover{
+    color: var(--contrast-color);
 }
 body {
     /* padding: 4em; */
-    font-family: handwriting, "Pacifico";
+    font-family: 'Montserrat', cursive;
+    /* background-image: 'images/arches.png'; */
+    background-color:  var(--background-color);
+    background-image: url(http://www.transparenttextures.com/patterns/arches.png);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     font-size: 18px;
     line-height: 1.5em;
     display: grid;
@@ -39,13 +56,16 @@ body > * {
 }
 h1, h2, h3 {
     line-height: 1.2em;
+    font-family: 'WindSong', cursive;
 }
 body > header {
     grid-area: head;
+    background-color: var(--heading-color);
     /* background-color: aqua; */
 }
 body > nav {
     grid-area: nav;
+    background-color: var(--light-color);
     /* background-color: red; */
 }
 body > nav ul{
@@ -62,6 +82,7 @@ body > main {
 }
 body > footer {
     grid-area: foot;
+    background-color: var(--heading-color);
     /* background-color: blueviolet; */
 }
 header, footer {
