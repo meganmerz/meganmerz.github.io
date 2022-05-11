@@ -18,7 +18,7 @@ p {
     /* --light-color: aliceblue; */
     --light-color: rgb(0, 146, 0);
     /* --background-color:  whitesmoke; */
-    --link-color: rgb(170, 170, 170);
+    --link-color: rgb(0, 0, 0);
     --contrast-color:rgb(250, 169, 196);
 }
 a {
